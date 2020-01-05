@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_linear"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="25dp"
+        android:hint="Enter First number"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/ed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="25dp"
+        android:hint="Enter Second number"
+        android:inputType="number"/>
+
+    <RelativeLayout
+        android:layout_width="384dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="10dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/add"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Addition"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/sub"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:text="Subtraction"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/mul"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="Multiplication"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/div"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:text="Division"
+                android:textSize="20dp" />
+
+
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>
